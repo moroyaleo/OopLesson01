@@ -1,12 +1,16 @@
 ﻿using System.Windows.Forms;
 
-class sample
+class sample : Form
+
 {
-    static Form form;
+    int data;
     public static void Main()
     {
-        form = new Form();
-        Application.Run(form);
+       
+        Application.Run(new sample());
     }
-
+    public sample()
+    {
+        data = 6;
+    }
 }
