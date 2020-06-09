@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Runtime.Remoting.Metadata;
+using System.Globalization;
 using System.Windows.Forms;
 
 class Sample : Form
@@ -8,37 +8,32 @@ class Sample : Form
     int data;
     public static void Main()
     {
-       
+
         Application.Run(new Sample());
     }
     public Sample()
     {
 
-        var scores = new int[5];
-      
-       
-        
-       
-        for (int i = 0; i < scores.Length; i++)
-        {
-            Console.Write("scores["+i+"] = ");
-            scores[i] = int.Parse(Console.ReadLine());
+        int step;
 
-
-        }
+        Console.Write("段数: ");
+        step = int.Parse(Console.ReadLine());
         Console.WriteLine();
 
-        for (int j = 0; j < scores.Length; j++)
-
-
+        for (int j = 0; j < step; j++)
         {
-            //アスタリスク出力
-            for (int i = 0; i < scores[j]; i++)
+            for(int i = step-1;i>( j-1);i--)
             {
-                Console.Write("*");
+                Console.Write(" ");
             }
-            Console.WriteLine();//改行
+            for (int i = 0; i < (j + 1); i++)
+            {
+                Console.Write("＊");
+            }
+
+            Console.WriteLine();
         }
+
 
     }
 }
