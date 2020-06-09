@@ -15,12 +15,15 @@ class Sample : Form
     {
         //stringの別名(エリアス)がString
         string moji = "";
-        
         moji = Console.ReadLine();
+            Console.WriteLine("文字列:" + moji.ToUpper());
+             Console.WriteLine("文字数:" + moji.Length);
+            
+        
+        
+           
 
-        Console.WriteLine("入力された文字:" + moji.Length);
-
-
+        
 
 
     }
