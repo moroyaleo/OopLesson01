@@ -16,14 +16,16 @@ class Sample : Form
         //stringの別名(エリアス)がString
         string moji = "";
         moji = Console.ReadLine();
-            Console.WriteLine("文字列:" + moji.ToUpper());
-             Console.WriteLine("文字数:" + moji.Length);
-            
-        
-        
-           
+        Console.WriteLine("文字列:" + moji.ToLower());
+        Console.WriteLine("置換後:" + moji.Replace("bc","hijk"));
 
-        
+
+
+
+
+
+
+
 
 
     }
