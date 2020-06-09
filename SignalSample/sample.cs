@@ -13,11 +13,20 @@ class Sample : Form
     }
     public Sample()
     {
-        //stringの別名(エリアス)がString
-        string moji = "";
-        moji = Console.ReadLine();
-        Console.WriteLine("文字列:" + moji.ToLower());
-        Console.WriteLine("置換後:" + moji.Replace("bc","hijk"));
+        
+
+        var str = "";
+
+        str = Console.ReadLine();
+        var city = str.Split(',');
+       
+        for (int i = 0; i < city.Length; i++)
+        {
+            Console.Write("群馬県");
+            Console.WriteLine(city[i] + "市");
+        }
+
+
 
 
 
