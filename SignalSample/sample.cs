@@ -13,26 +13,14 @@ class Sample : Form
     }
     public Sample()
     {
+        //stringの別名(エリアス)がString
+        string moji = "";
+        
+        moji = Console.ReadLine();
 
-        int step;
+        Console.WriteLine("入力された文字:" + moji.Length);
 
-        Console.Write("段数: ");
-        step = int.Parse(Console.ReadLine());
-        Console.WriteLine();
 
-        for (int j = 0; j < step; j++)
-        {
-            for(int i = step-1;i>( j-1);i--)
-            {
-                Console.Write(" ");
-            }
-            for (int i = 0; i < (j + 1); i++)
-            {
-                Console.Write("＊");
-            }
-
-            Console.WriteLine();
-        }
 
 
     }
