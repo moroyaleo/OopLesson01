@@ -13,18 +13,16 @@ class Sample : Form
     }
     public Sample()
     {
-        
+        Random rnd = new Random();
+        Console.Write("①");
+        Console.WriteLine(rnd.Next(101));
 
-        var str = "";
-
-        str = Console.ReadLine();
-        var city = str.Split(',');
-       
-        for (int i = 0; i < city.Length; i++)
+        Console.Write("②");
+        for (int i = 0; i < 20; i++)
         {
-            Console.Write("群馬県");
-            Console.WriteLine(city[i] + "市");
+            Console.Write(rnd.Next(20) + 1 + " ");
         }
+    }
 
 
 
@@ -38,4 +36,4 @@ class Sample : Form
 
 
     }
-}
+
