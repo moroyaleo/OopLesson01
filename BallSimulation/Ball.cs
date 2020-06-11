@@ -11,7 +11,7 @@ class Ball{
     public Ball(){
         XPos = 0;
         YPos = 0;
-        Img = Image.FromFile("image\\soccer_ball.png");
+        Img = Image.FromFile(@"image\soccer_ball.png");
 
     }
 }

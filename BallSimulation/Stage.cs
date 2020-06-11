@@ -8,8 +8,8 @@ class Stage : Form
 
     }
     public Stage () {
-        Width = 800;
-        Height = 600;
+        Width = 1200;
+        Height = 800;
         Text = "ボールシミュレーション";
 
 
