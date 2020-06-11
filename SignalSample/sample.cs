@@ -13,14 +13,20 @@ class Sample : Form
     }
     public Sample()
     {
+        int num;
         Random rnd = new Random();
-        Console.Write("①");
-        Console.WriteLine(rnd.Next(101));
+        var checkNum = new int[20] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 
-        Console.Write("②");
         for (int i = 0; i < 20; i++)
         {
-            Console.Write(rnd.Next(20) + 1 + " ");
+            do
+            {
+                num = rnd.Next(20) + 1;
+
+            } while (checkNum[num - 1] != 0);
+            checkNum[num - 1] = 1;
+            Console.Write(num + " ");
+        }
         }
     }
 
@@ -35,5 +41,5 @@ class Sample : Form
 
 
 
-    }
+    
 
